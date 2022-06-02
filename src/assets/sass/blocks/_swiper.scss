@@ -1,0 +1,23 @@
+// slider styles
+.swiper-button-next,
+.swiper-button-prev {}
+
+.swiper-button-prev::after {
+    content   : '';
+    width     : 22px;
+    height    : 15px;
+    background: url('../../assets/img/prevArrow.svg') no-repeat;
+
+}
+
+.swiper-button-next::after {
+    content   : '';
+    width     : 22px;
+    height    : 15px;
+    background: url('../../assets/img/nextArrow.svg') no-repeat;
+
+}
+
+.swiper-button-next {}
+
+.swiper-button-prev {}

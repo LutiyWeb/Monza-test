@@ -1,0 +1,49 @@
+/* Важная часть */
+.popup__bg {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100vh;
+    background     : linear-gradient(126.6deg, rgba(0, 0, 0, 0.52) 28.69%, rgba(0, 0, 0, 0.52) 100%);
+    opacity        : 0; // Скрываем фон и сам попап
+    pointer-events : none; // Запрещаем ему быть целью событий
+    transition     : 0.5s all;
+    overflow       : auto;
+}
+
+.popup__bg.active {
+    // При добавлении класса 'active'
+    opacity       : 1; // Показываем фон и попап
+    pointer-events: all; // Возвращаем события
+    transition    : 0.5s all;
+}
+
+.popup-inner {
+    top          : 50%;
+    left         : 50%;
+    transform    : translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    width        : 712px;
+    height       : 280px;
+    position     : relative;
+    background   : #fff;
+    border-radius: 8px;
+    padding      : 45px ;
+    transition   : 0.5s all;
+    z-index      : 20;
+    overflow     : hidden;
+}
+
+.popup-inner.active {
+    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+}
+
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+    position: absolute;
+    top     : 4px;
+    right   : 20px;
+    cursor  : pointer;
+    z-index : 60;
+}

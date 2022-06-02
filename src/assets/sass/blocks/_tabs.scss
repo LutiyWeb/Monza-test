@@ -1,0 +1,89 @@
+// tabs
+
+.tabs {
+    position: relative;
+    max-width: 700px;
+}
+
+.tabs__list {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.tabs__item:last-child .tabs__btn {
+    margin-right: 0;
+}
+
+.tabs__btn {
+    color        : #000;
+    background-color: #b7b7b7;
+    padding      : 14px 25px;
+    border-radius: 25px;
+    transition   : all .6s;
+    margin-right : 22px;
+}
+
+.tabs__btn--active {
+    color : #b7b7b7;
+    background-color: #000;
+    
+}
+
+.tabs__content {
+    opacity   : 0;
+    display   : flex;
+    visibility: hidden;
+    transition: transform .6s;
+    position  : absolute;
+    transform : scale(0);
+}
+
+.tabs__content--active {
+    opacity   : 1;
+    visibility: visible;
+    position  : relative;
+    transform : scale(1);
+
+}
+
+.tabs__arrow {
+    position        : absolute;
+    top             : 50%;
+    transform       : translateY(14px);
+    width           : 51px;
+    height          : 51px;
+    background-color: #fff;
+    border-radius   : 50%;
+    box-shadow      : 0px 7px 10px rgba(0, 0, 0, 0.13);
+    cursor          : pointer;
+    transition      : background-color 0.3s ease-in-out;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+
+    &:hover {
+        background-color: #63DFA6;
+    }
+}
+
+.tabs__arrow svg {
+    pointer-events: none;
+    fill          : #19A364;
+    transition    : fill 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+.tabs__arrow--next {
+    right: -20px;
+}
+
+.tabs__arrow--prev {
+    left: -20px;
+}
+
+// tabs end 

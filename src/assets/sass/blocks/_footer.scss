@@ -1,0 +1,13 @@
+.footer {
+    padding: 37px 0;
+    background-color: var(--main__color);
+
+    .menu__list {
+        justify-content: center;
+    }
+
+    .menu__link {
+        color: #fff;
+        font-weight: 600;
+    }
+}

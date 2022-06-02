@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.3.2/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css?v=1.0.0">
+
+    <style>
+        :root {
+            --main__color: #000000;
+            --addit__color: #f8f8f8;
+            --accent__color: #DF4E3C;
+            --grey__color: #AEAEAE;
+            --thirty_bg: ;
+            --secondary_accent: ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper ">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 d-flex align-items-center col-sm-4 col-md-3">
+                        <a href="#" class="logo">
+                            <img src="assets/img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-1 d-flex justify-content-end align-items-center col-sm-5 col-md-7 col-xl-8">
+                        <nav class="menu">
+                            <a href="#" class="logo">
+                                <img src="assets/img/logo.svg" alt="logo">
+                            </a>
+                            <ul class="menu__list flex">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Inventory</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Financing </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Contacts </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-end col-6 col-sm-3 col-md-2 col-xl-1">
+                        <div class="social flex">
+                            <a href="#" class="social__link">
+                                <svg class="svgIconFacebook iconReset">
+                                    <use xlink:href="#svgIconFacebook">
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="svgIconInstagram iconReset">
+                                    <use xlink:href="#svgIconInstagram">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="#" class="burger-button">
+                            <span></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header><div class="main" style="background-image: url('assets/img/main__bg.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="title main__title">The right way to get a car</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-5 col-lg-3">
+                <p class="title main__text">Monza Motorsports is a boutique-style dealership specializing in premium
+                    imports. We offer an advanced online vehicle purchasing experience with integrated financing and
+                    contactless home delivery.
+                </p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3">
+                <p class="title main__text">All of our cars come with a 5 day/500 kilometres no-hassle exchange option.
+                    Since 2012 Monza Motorsports
+                    has been the benchmark for innovation in the automotive industry.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="main__btn basic__btn">
+                    Browse cars
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="offer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="title text-center">CURRENT OFFERS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="filters__title">Filters</h2>
+                <div class="filters">
+                    <div class="filters__items d-flex">
+                        <div class="inputfield">
+                            <div class="select-inner">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Year">
+                                    <option value="profile">Profile</option>
+                                    <option value="word">Word</option>
+                                    <option value="hashtag">Hashtag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <div class="select-inner">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Make">
+                                    <option value="profile">Profile</option>
+                                    <option value="word">Word</option>
+                                    <option value="hashtag">Hashtag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <div class="select-inner">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Model">
+                                    <option value="profile">Profile</option>
+                                    <option value="word">Word</option>
+                                    <option value="hashtag">Hashtag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <div class="select-inner">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Trim">
+                                    <option value="profile">Profile</option>
+                                    <option value="word">Word</option>
+                                    <option value="hashtag">Hashtag</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputfield">
+                            <div class="select-inner">
+                                <select name="sources" id="sources" class="custom-select sources"
+                                    placeholder="Mileage ">
+                                    <option value="profile">Profile</option>
+                                    <option value="word">Word</option>
+                                    <option value="hashtag">Hashtag</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="filters__btn">
+                        <button class="basic__btn filters__btn--basic">40 cars</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="form-group">
+                    <input type="checkbox" id="html">
+                    <label for="html">Instantly available vehicles</label>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="sort">
+                    <span class="sort__title">Sort by </span>
+                    <div class="select-inner">
+                        <select name="sources" id="sources" class="custom-select sources"
+                            placeholder="Publication date (ascending)">
+                            <option value="profile">Publication date (descending)</option>
+                            <option value="word">Price (ascending)</option>
+                            <option value="hashtag">Price (descending)</option>
+                            <option value="profile">Mileage (ascending)</option>
+                            <option value="word">Mileage (descending)</option>
+                            <option value="hashtag">Performance (ascending)</option>
+                            <option value="hashtag">Performance (descending)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-6">
+                <div class="dropdown">
+                    <div class="dropdown__title">
+                        Sort by 
+                    </div>
+                    <div class="dropdown__inner">
+                        <button class="dropdown__btn">
+                            Publication date <span>(ascending)</span>
+                        </button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                                Publication date (descending)
+                            </li>
+                            <li class="dropdown__item">
+                                Price (ascending)
+                            </li>
+                            <li class="dropdown__item">
+                                Mileage (ascending)
+                            </li>
+                            <li class="dropdown__item">
+                                Mileage (ascending)
+                            </li>
+                            <li class="dropdown__item">
+                                Performance (ascending)
+                            </li>
+                            <li class="dropdown__item">
+                                Performance (ascending)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item new">
+                        <div class="car__item-img">
+                            <img src="assets/img/car1.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2017 </span>
+                                <span class="car__item-name">Lexus RX 350 LUXURY</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>39,850 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,775
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car2.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Lexus RX 350 F-SPORT</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>86,000 km</span>
+                                <span>Automatic</span>
+                                <span>Gas</span>
+                            </div>
+                            <div class="car__item-price">
+                                $34,888
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car3.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2015 </span>
+                                <span class="car__item-name">Toyota Venza AWD XLE...</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>99,000 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $18,620
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item sold-status">
+                        <div class="car__item-img">
+                            <img src="assets/img/car4.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Mercedes-Benz GLE- Clksnalfn Clksnalfn</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>59,800 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,878
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item new">
+                        <div class="car__item-img">
+                            <img src="assets/img/car1.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2017 </span>
+                                <span class="car__item-name">Lexus RX 350 LUXURY</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>39,850 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,775
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car2.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Lexus RX 350 F-SPORT</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>86,000 km</span>
+                                <span>Automatic</span>
+                                <span>Gas</span>
+                            </div>
+                            <div class="car__item-price">
+                                $34,888
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car3.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2015 </span>
+                                <span class="car__item-name">Toyota Venza AWD XLE...</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>99,000 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $18,620
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item sold-status">
+                        <div class="car__item-img">
+                            <img src="assets/img/car4.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Mercedes-Benz GLE- Clksnalfn Clksnalfn</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>59,800 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,878
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item new">
+                        <div class="car__item-img">
+                            <img src="assets/img/car1.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2017 </span>
+                                <span class="car__item-name">Lexus RX 350 LUXURY</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>39,850 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,775
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car2.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Lexus RX 350 F-SPORT</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>86,000 km</span>
+                                <span>Automatic</span>
+                                <span>Gas</span>
+                            </div>
+                            <div class="car__item-price">
+                                $34,888
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car3.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2015 </span>
+                                <span class="car__item-name">Toyota Venza AWD XLE...</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>99,000 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $18,620
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item sold-status">
+                        <div class="car__item-img">
+                            <img src="assets/img/car4.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Mercedes-Benz GLE- Clksnalfn Clksnalfn</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>59,800 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,878
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item new">
+                        <div class="car__item-img">
+                            <img src="assets/img/car1.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2017 </span>
+                                <span class="car__item-name">Lexus RX 350 LUXURY</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>39,850 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,775
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car2.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Lexus RX 350 F-SPORT</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>86,000 km</span>
+                                <span>Automatic</span>
+                                <span>Gas</span>
+                            </div>
+                            <div class="car__item-price">
+                                $34,888
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item">
+                        <div class="car__item-img">
+                            <img src="assets/img/car3.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2015 </span>
+                                <span class="car__item-name">Toyota Venza AWD XLE...</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>99,000 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $18,620
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+                <a href="#">
+                    <div class="car__item sold-status">
+                        <div class="car__item-img">
+                            <img src="assets/img/car4.png" alt="car">
+                            <div class="label">New</div>
+                        </div>
+                        <div class="car__item-data">
+                            <div class="car__item-info d-flex">
+                                <span class="car__item-year">2016 </span>
+                                <span class="car__item-name">Mercedes-Benz GLE- Clksnalfn Clksnalfn</span>
+                            </div>
+                            <div class="car__item-details">
+                                <span>59,800 km</span>
+                                <span>Automatic</span>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="car__item-price">
+                                $38,878
+                            </div>
+                        </div>
+                        <div class="sold">sold</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <h2 class="subscribe__heading">Haven't found a suitable vehicle?</h2>
+                <div class="subscribe__descr">Sign up for our newsletter and be the first to know when we publish new
+                    vehicle offers.
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-4 col-xl-5">
+                <div class="subscribe__field">
+                    <input type="text" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3 col-xl-2">
+                <button type="submit" class="basic__btn basic__btn--subscribe">
+                    Subscribe now
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="title text-center">popular questions</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                
+                  <div class="accordeon">
+                    <ol class="accordion">
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          1. Scope
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          2. Vehicle characteristics
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          3. Warranty / guarantee
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          4. Trade-in vehicle
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          5. Home Delivery
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          6. Right of return
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          7. Written form
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="accordion__item">
+                        <div class="accordion__header">
+                          8. Applicable law and place of jurisdiction
+                        </div>
+                        <ol class="accordion__content">
+                          <li>
+                            The statutory warranty is completely excluded to the extent permitted by law.
+                          </li>
+                          <li>
+                            If the vehicle still has a current factory warranty, a sales representative (brand representative) of the
+                            manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the
+                            warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first
+                            placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually
+                            agreed beginning of the warranty, if any.
+                          </li>
+                          <li>
+                            3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                            warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                            respective warranty service provider apply.
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-2 text-center">
+                <a href="#" class="logo">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="col-sm-8 ">
+                <nav class="menu">
+                    <ul class="menu__list flex">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Inventory</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Financing </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contacts </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-2">
+                <div class="social flex">
+                    <a href="#" class="social__link">
+                        <svg class="svgIconFacebook iconReset">
+                            <use xlink:href="#svgIconFacebook">
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="svgIconInstagram iconReset">
+                            <use xlink:href="#svgIconInstagram">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- SVG Icon sprite -->
+<svg style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="svgIconFacebook" viewBox="0 0 18 18">
+        <path d="M12.3575 2.98875H14.0007V0.12675C13.7172 0.08775 12.7422 0 11.6067 0C9.2375 0 7.6145 1.49025 7.6145 4.22925V6.75H5V9.9495H7.6145V18H10.82V9.95025H13.3287L13.727 6.75075H10.8192V4.5465C10.82 3.62175 11.069 2.98875 12.3575 2.98875Z" />
+    </symbol>
+    <symbol id="svgIconInstagram" viewBox="0 0 25 25">
+        <path d="M12.1775 21C12.1179 21 12.0583 21 11.9983 20.9997C10.5873 21.0032 9.2836 20.9673 8.01572 20.8901C6.85333 20.8194 5.79228 20.4177 4.94713 19.7286C4.13163 19.0637 3.57474 18.1646 3.29197 17.0566C3.04587 16.092 3.03282 15.1451 3.02033 14.2292C3.01126 13.5721 3.00192 12.7935 3 12.0016C3.00192 11.2065 3.01126 10.4278 3.02033 9.77071C3.03282 8.85499 3.04587 7.90811 3.29197 6.94337C3.57474 5.83539 4.13163 4.9363 4.94713 4.27135C5.79228 3.58223 6.85333 3.18054 8.01586 3.10981C9.28373 3.03277 10.5877 2.99679 12.0017 3.00022C13.4131 2.9972 14.7164 3.03277 15.9843 3.10981C17.1467 3.18054 18.2077 3.58223 19.0529 4.27135C19.8685 4.9363 20.4253 5.83539 20.708 6.94337C20.9541 7.90797 20.9672 8.85499 20.9797 9.77071C20.9887 10.4278 20.9982 11.2065 21 11.9983V12.0016C20.9982 12.7935 20.9887 13.5721 20.9797 14.2292C20.9672 15.145 20.9543 16.0918 20.708 17.0566C20.4253 18.1646 19.8685 19.0637 19.0529 19.7286C18.2077 20.4177 17.1467 20.8194 15.9843 20.8901C14.7701 20.964 13.5228 21 12.1775 21ZM11.9983 19.5935C13.3863 19.5968 14.6608 19.5617 15.8989 19.4865C16.7778 19.4331 17.5399 19.1478 18.1642 18.6388C18.7413 18.1681 19.1387 17.5188 19.3454 16.7089C19.5503 15.9059 19.5621 15.0437 19.5735 14.21C19.5824 13.5573 19.5918 12.7841 19.5937 12C19.5918 11.2157 19.5824 10.4427 19.5735 9.78993C19.5621 8.9562 19.5503 8.09405 19.3454 7.29095C19.1387 6.48098 18.7413 5.83168 18.1642 5.36106C17.5399 4.85211 16.7778 4.56688 15.8989 4.51346C14.6608 4.43806 13.3863 4.40332 12.0016 4.40634C10.6138 4.40304 9.33922 4.43806 8.10115 4.51346C7.22221 4.56688 6.46014 4.85211 5.83582 5.36106C5.25874 5.83168 4.86129 6.48098 4.6546 7.29095C4.4497 8.09405 4.43789 8.95607 4.42649 9.78993C4.41756 10.4432 4.40823 11.2168 4.4063 12.0016C4.40823 12.783 4.41756 13.5567 4.42649 14.21C4.43789 15.0437 4.4497 15.9059 4.6546 16.7089C4.86129 17.5188 5.25874 18.1681 5.83582 18.6388C6.46014 19.1477 7.22221 19.4329 8.10115 19.4864C9.33922 19.5617 10.6141 19.5969 11.9983 19.5935ZM11.9648 16.3945C9.54165 16.3945 7.57007 14.4232 7.57007 12C7.57007 9.5768 9.54165 7.60543 11.9648 7.60543C14.388 7.60543 16.3595 9.5768 16.3595 12C16.3595 14.4232 14.388 16.3945 11.9648 16.3945ZM11.9648 9.01168C10.317 9.01168 8.97638 10.3523 8.97638 12C8.97638 13.6477 10.317 14.9883 11.9648 14.9883C13.6126 14.9883 14.9532 13.6477 14.9532 12C14.9532 10.3523 13.6126 9.01168 11.9648 9.01168ZM16.8517 6.19918C16.2692 6.19918 15.797 6.67132 15.797 7.25387C15.797 7.83642 16.2692 8.30856 16.8517 8.30856C17.4343 8.30856 17.9064 7.83642 17.9064 7.25387C17.9064 6.67132 17.4343 6.19918 16.8517 6.19918Z"/>
+    </symbol>
+</svg>
+
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@7.3.2/swiper-bundle.min.js"></script> -->
+<script src="./assets/js/app.js"></script>
+</body>
+
+</html>
